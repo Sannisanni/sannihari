@@ -19,13 +19,13 @@
   become: yes
 - name: i want to install a apache2 on "RedHat" ansible node server
   yum: 
-   name: apache2
+   name: httdp
    state: present
   when: ansible_os_family =="RedHat"
 
 - name:  i want to install a apache2 on RedHat ansible node server
   service:
-    name: apache2
+    name: httdp
     state: started
   when: ansible_os_family =="RedHat"
   
