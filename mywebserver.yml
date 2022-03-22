@@ -3,13 +3,13 @@
 - hosts: all
   tasks:
   become: yes
-- name: i want to install a apache2 on "RedHat" ansible node server
+- name: i want to install   "RedHat" on ansible node server
   yum: 
    name: httdp
    state: present
   when: ansible_os_family =="RedHat"
 
-- name:  i want to install a apache2 on RedHat ansible node server
+- name:  i want to install   RedHat on ansible node server
   service:
     name: httdp
     state: started
