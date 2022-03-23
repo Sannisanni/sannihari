@@ -4,7 +4,7 @@
   tasks:
   become: yes
 - name: i want to install   "RedHat" on ansible node server
-  yum: 
+  yum:
    name: httdp
    state: present
   when: ansible_os_family =="RedHat"
@@ -14,4 +14,4 @@
     name: httdp
     state: started
   when: ansible_os_family =="RedHat"
-  
+
