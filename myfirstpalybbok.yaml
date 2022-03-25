@@ -12,8 +12,8 @@
     service:
     apt:
      name: apache2
-     
-
+    when: ansible_os_family=="debian"  
+    state: started
   - name: i want to install a httdp on RedHat nodes
     yum:
      name: httdp
@@ -24,7 +24,7 @@
     service:
     yum:
      name: httdp
-     
-    
+    when: ansible_os_family=="RedHat" 
+    state: started
      
 
