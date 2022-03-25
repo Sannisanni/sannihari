@@ -1,28 +1,31 @@
+
+
+ sloc)  739 Bytes
+   
 ---
 - hosts: mywebsever
   become: yes
   tasks:
-  - name: i want to install apache2 on ubuntu node server
+  - name: i want to install webserver on ansible ubuntu nodes
     apt:
-     name: apache2
-     state: present   
-    when: ansible_os_family=="debian"
-  - name: i want to install apache2 on ubuntu node server
+      name: "{{mypacakgeforubuntu}}"
+      state: present
+    when: ansible_os_family =="Debian"
+    
+  - name: i want to start webserver on ansible ubuntu nodes
     service:
-    apt:
-     name: apache2
-    when: ansible_os_family=="debian"  
-    state: started
-  - name: i want to install a httdp on RedHat nodes
-    yum:
-     name: httdp
-     state: present
-    when: ansible_os_family=="RedHat"
-  - name: i want to install httdp on RedHat node server
-    service:
-    yum:
-     name: httdp
-    when: ansible_os_family=="RedHat" 
-    state: started
-     
+        name: "{{mypacakgeforubuntu}}"
+        state: started
+    when: ansible_os_family =="Debian"
 
+  - name: i want to install webserver on ansible RedHat nodes
+    yum:
+      name: "{{mypacakgeforredhat}}"
+      state: present
+    when: ansible_os_family =="RedHat"
+
+  - name: i want to start webserver on ansible RedHat nodes
+    service:
+        name: "{{mypacakgeforredhat}}"
+        state: started
+    when: ansible_os_family =="RedHat"

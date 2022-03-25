@@ -1,3 +1,8 @@
 [mywebsever]
 172.31.42.225
 172.31.26.40
+
+
+[mywebserver:vars]
+mypacakgeforubuntu= ubuntu
+mypacakgeforredhat= RedHat
