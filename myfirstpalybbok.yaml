@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: mywebsever
   become: yes
   tasks:
   - name: i want to install apache2 on ubuntu node server
