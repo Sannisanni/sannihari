@@ -9,6 +9,7 @@
     when: ansible_os_family=="debian"
 
   - name: i want to install apache2 on ubuntu node server
+    service:
     apt:
      name: apache2
      
@@ -20,6 +21,7 @@
     when: ansible_os_family=="RedHat"
     
   - name: i want to install httdp on RedHat node server
+    service:
     yum:
      name: httdp
      
