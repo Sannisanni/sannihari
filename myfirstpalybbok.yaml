@@ -18,6 +18,11 @@
      name: httdp
      state: present
     when: ansible_os_family=="RedHat"
-    state: started
+    
+  - name: i want to install httdp on RedHat node server
+    yum:
+     name: httdp
+     state: started
+    
      
 
