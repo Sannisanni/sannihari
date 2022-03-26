@@ -4,5 +4,5 @@
 
 
 [mywebserver:vars]
-mypacakgeforubuntu= ubuntu
-mypacakgeforredhat= RedHat
+mypacakgeforubuntu= apache2
+mypacakgeforredhat= httdp
