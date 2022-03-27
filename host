@@ -3,6 +3,3 @@
 172.31.26.40
 
 
-[mywebsever:vars]
-mypacakgeforubuntu= apache2
-mypacakgeforredhat= httpd
