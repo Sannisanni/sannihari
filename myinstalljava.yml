@@ -1,7 +1,7 @@
 
    
 ---
-- hosts: mywebsever
+- hosts: mywebserver
   become: yes
   tasks:
   - name: install java on ubuntu ansible nodes

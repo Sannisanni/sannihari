@@ -1,6 +1,6 @@
    
 ---
-- hosts: mywebsever
+- hosts: mywebserver
   become: yes
   tasks:
   - name: i want to install webserver on ansible ubuntu nodes
