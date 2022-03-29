@@ -9,3 +9,7 @@
   - name: i want to display var1
     debug:
       msg: "{{var1}}"
+  - name: i want to install git
+    apt:
+     name: "{{var1}}"
+     state: present 
