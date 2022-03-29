@@ -11,7 +11,7 @@
       msg: "{{var1}}"
   - name: i want to install git
     apt:
-     name: "{{var1}}"
+     name: "{{item}}"
      state: present
     loop: 
     - "{{var1}}"
