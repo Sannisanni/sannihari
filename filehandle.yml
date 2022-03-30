@@ -2,3 +2,9 @@
 - hosts: mywebsever
   become: yes
   tasks:
+  - includ_tasks: file.yml
+  - name: i want to install webserver
+    apt: 
+     name: apache2
+     state: present
+
