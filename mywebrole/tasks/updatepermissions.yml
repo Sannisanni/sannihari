@@ -3,7 +3,7 @@
   file:
    path: /opt/tomcat
    group: tomcat 
-   recurs: yes
+   recurse: yes
    state: directory
 - name: i want to give read access to the confi directory
   file:
