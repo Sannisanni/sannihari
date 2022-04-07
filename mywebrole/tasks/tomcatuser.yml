@@ -1,0 +1,12 @@
+---
+- name: create a usr
+  group:
+    name: tomcat
+    state: present
+- name: i want add a user
+  user:
+   name: tomcat
+   shell: /bin/false
+   group: tomcat
+   home: /opt/tomcat
+   state: present

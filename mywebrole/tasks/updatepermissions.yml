@@ -1,0 +1,43 @@
+---
+- name: i want to give tomcat ownership
+  file:
+  path: /opt/tomcat
+  group: tomcat 
+  recurs: yes
+  state: directory
+- name: i want to give read access to the confi directory
+  file:
+  path: tomcat /opt/tomcat/conf
+  recurse: yes
+  mode: g+r
+  state: directory
+- name: i want to give execute access to the confi directory
+  file:
+  path: tomcat /opt/tomcat/conf
+  mode: g+r
+  state: directory
+- name: Make the tomcat user the owner of the webapps
+  file:
+  path: tomcat /opt/tomcat/webapps/
+  recurse: yes
+  owner: tomcat
+  state: directory
+- name: Make the tomcat user the owner of the work
+  file:
+  path: tomcat /opt/tomcat/work/
+  recurse: yes
+  owner: tomcat
+  state: directory
+- name: Make the tomcat user the owner of the temp
+  file:
+  path: tomcat /opt/tomcat/temp/
+  recurse: yes
+  owner: tomcat
+  state: directory
+- name: Make the tomcat user the owner of the logs
+  file:
+  path: tomcat /opt/tomcat/logs/
+  recurse: yes
+  owner: tomcat
+  state: directory
+
