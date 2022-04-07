@@ -6,8 +6,8 @@
       force_basic_auth: yes
 - name: i want to create a directory
   file:
-  path: /opt/tomcat
-  state: directory
+    path: /opt/tomcat
+    state: directory
 
 - name: i want to extract the tae file
   command: 
