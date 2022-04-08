@@ -5,11 +5,8 @@
 - include_tasks: installtomcat.yml
 - include_tasks: updatepermissions.yml
 - include_tasks: tomactservice.yml
-- include_tasks: tomcatuser.yml
-- include_tasks: starttomacat.yml
-- include_tasks: tomcatwebmng.yml
-- include_tasks: restarttomcat.yml
-- include_tasks: deployjavaapplication.yml
+- include_tasks: starttomcatt.yml
+
 
  
 

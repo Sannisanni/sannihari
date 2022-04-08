@@ -1,5 +1,0 @@
----
-mypacakgeforubuntu: apache2
-mypacakgeforredhat: httpd
-mypackageforubuntu: openjdk-8-jre
-mypackageforredhat: java-1.8.0-openjdk

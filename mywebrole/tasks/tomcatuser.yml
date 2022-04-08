@@ -1,12 +1,14 @@
 ---
-- name: create a usr
+- name: i want to create group
   group:
-    name: tomcat
-    state: present
-- name: i want add a user
-  user:
    name: tomcat
-   shell: /bin/false
-   group: tomcat
-   home: /opt/tomcat
    state: present
+
+- name: create a new tomcat user
+  user: 
+   name: tomcat 
+   shell: /bin/false
+   home: /opt/tomcat
+   group: tomcat
+   state: present
+
