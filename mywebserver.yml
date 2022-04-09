@@ -9,3 +9,10 @@
   - name: i want to display my 1st task result
     debug:
        msg: "{{myResult}}"
+
+  - name: i want to install git
+    apt:
+      name: git
+      state: present
+    when: myResult.stderr ==""
+    
