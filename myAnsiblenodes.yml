@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: i want to create ec2 instances on my ansible nodes
+    ec2:
+     key_name: sanniohio
+     instance_type: t2.micro
+     image: ami-00bcda1c3d48c8993
+     wait: yes
+     group: mySG17
+     region: us-east-2
+     count: 2
+     vpc_subnet_id: subnet-0add9b85daae72d3a
+     assign_public_ip: yes
+     instance_tags:
+         name: myAnsiblenodes
