@@ -1,0 +1,9 @@
+---
+- hosts: myapplicationserver
+  become: yes
+  tasks:
+  - include_tasks: file.yml
+  - nanme: i want to install a webserver
+    apt:
+     nanme: apache2
+     state: present
