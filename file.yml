@@ -1,5 +1,5 @@
 ---
  - nanme: i want to create a file
    file:
-      path: /home/ubuntu/mytestfile
+      path: /home/ubuntu/sannihari/file.yml
       state: touch
