@@ -10,4 +10,4 @@
   - name: i want to copy files into node side
     template:
        src: src.j2
-       dest: var/www/html/index.html
+       dest: /var/www/html/index.html
