@@ -5,5 +5,5 @@
   - include_tasks: file.yml
   - name: i want to install a webserver
     apt:
-     nanme: apache2
+     name: apache2
      state: present
