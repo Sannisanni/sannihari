@@ -7,7 +7,7 @@
 - include_tasks: tomactservice.yml
 - include_tasks: starttomcatt.yml
 - include_tasks: tomcatwebmang.yml
-- include_tasks: restarttomcatt.yml
+- include_tasks: restarttomcat.yml
 - include_tasks: deployjavaapplication.yml
 
 
