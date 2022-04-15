@@ -1,0 +1,15 @@
+---
+- name: i want to start tomcat user
+  template:
+      src: template/web.j2
+      dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: i want to start webappsmang
+  template:
+      src: template/webapps.j2
+      dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: i want to start webapps host ,mang
+  template:
+       src: template/host.j2
+       dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
